@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'ai-linc-landing-page',
+  description: 'A landing page for AI Linc',
+  generator: 'Next.js',
 }
 
 export default function RootLayout({

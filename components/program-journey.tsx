@@ -84,7 +84,7 @@ export function ProgramJourney() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-[#0BC5EA] bg-clip-text text-transparent">
             Your 111-Day Journey
           </h2>
-          <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
             Follow your transformation from AI beginner to industry-ready professional
           </p>
         </motion.div>
@@ -104,7 +104,7 @@ export function ProgramJourney() {
           />
 
           {/* Timeline nodes */}
-          <div className="grid grid-cols-5 relative">
+          <div className="grid grid-cols-5 sm:grid-cols-3 gap-4 sm:gap-2 relative">
             {journeySteps.map((step, index) => (
               <motion.div
                 key={step.id}
@@ -115,16 +115,16 @@ export function ProgramJourney() {
                 className="flex flex-col items-center"
                 onClick={() => setActiveStep(step.id)}
               >
-                <div className="mb-2 text-sm text-foreground/60">{step.day}</div>
+                <div className="mb-2 text-xs sm:text-[12px] text-foreground/60 whitespace-nowrap">{step.day}</div>
                 <div
                   className={cn(
-                    "relative size-12 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 z-10",
+                    "relative size-10 sm:size-12 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 z-10",
                     step.id <= activeStep
                       ? "bg-gradient-to-br from-[#0BC5EA] to-[#6B46C1] shadow-[0_0_15px_rgba(11,197,234,0.5)]"
                       : "bg-card/50 border border-[#0BC5EA]/30",
                   )}
                 >
-                  <step.icon className={cn("size-6", step.id <= activeStep ? "text-white" : "text-foreground/60")} />
+                  <step.icon className={cn("size-5 sm:size-6", step.id <= activeStep ? "text-white" : "text-foreground/60")} />
 
                   {/* Pulsing effect for active node */}
                   {step.id === activeStep && (
@@ -138,7 +138,7 @@ export function ProgramJourney() {
                 <div className="mt-2 font-medium text-center">
                   <div
                     className={cn(
-                      "transition-colors duration-300",
+                      "text-xs sm:text-sm transition-colors duration-300",
                       step.id <= activeStep ? "text-white" : "text-foreground/60",
                     )}
                   >
@@ -156,43 +156,43 @@ export function ProgramJourney() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-card/30 backdrop-blur-md border border-[#0BC5EA]/20 rounded-xl p-8 relative overflow-hidden"
+          className="bg-card/30 backdrop-blur-md border border-[#0BC5EA]/20 rounded-xl p-6 sm:p-8 relative overflow-hidden"
         >
-          <div className="absolute top-0 right-0 size-64 bg-gradient-to-bl from-[#0BC5EA]/10 to-transparent rounded-bl-full"></div>
-          <div className="absolute bottom-0 left-0 size-64 bg-gradient-to-tr from-[#6B46C1]/10 to-transparent rounded-tr-full"></div>
+          <div className="absolute top-0 right-0 size-48 sm:size-64 bg-gradient-to-bl from-[#0BC5EA]/10 to-transparent rounded-bl-full"></div>
+          <div className="absolute bottom-0 left-0 size-48 sm:size-64 bg-gradient-to-tr from-[#6B46C1]/10 to-transparent rounded-tr-full"></div>
 
-          <div className="grid md:grid-cols-2 gap-8 relative z-10">
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 relative z-10">
             <div>
               <div className="flex items-center mb-4">
-                <div className="size-12 rounded-full bg-gradient-to-br from-[#0BC5EA] to-[#6B46C1] flex items-center justify-center mr-4">
-                  {React.createElement(journeySteps[activeStep].icon, { className: "size-6 text-white" })}
+                <div className="size-10 sm:size-12 rounded-full bg-gradient-to-br from-[#0BC5EA] to-[#6B46C1] flex items-center justify-center mr-4">
+                  {React.createElement(journeySteps[activeStep].icon, { className: "size-5 sm:size-6 text-white" })}
                 </div>
                 <div>
                   <Badge variant="outline" className="bg-[#0BC5EA]/10 text-[#0BC5EA] border-[#0BC5EA]/30 mb-1">
                     {journeySteps[activeStep].day}
                   </Badge>
-                  <h3 className="text-2xl font-bold text-white">{journeySteps[activeStep].title}</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white">{journeySteps[activeStep].title}</h3>
                 </div>
               </div>
-              <p className="text-foreground/80 mb-6">{journeySteps[activeStep].description}</p>
+              <p className="text-sm sm:text-base text-foreground/80 mb-6">{journeySteps[activeStep].description}</p>
 
               <div className="space-y-4">
-                <h4 className="text-lg font-semibold text-white">What you'll accomplish:</h4>
+                <h4 className="text-base sm:text-lg font-semibold text-white">What you'll accomplish:</h4>
                 <ul className="space-y-2">
-                  <li className="flex items-start text-foreground/80 bg-background/50 p-3 rounded-lg">
-                    <div className="size-5 rounded-full bg-[#0BC5EA]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                  <li className="flex items-start text-sm sm:text-base text-foreground/80 bg-background/50 p-3 rounded-lg">
+                    <div className="size-4 sm:size-5 rounded-full bg-[#0BC5EA]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                       <div className="size-2 bg-[#0BC5EA] rounded-full"></div>
                     </div>
                     Master core AI concepts through hands-on projects
                   </li>
-                  <li className="flex items-start text-foreground/80 bg-background/50 p-3 rounded-lg">
-                    <div className="size-5 rounded-full bg-[#0BC5EA]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                  <li className="flex items-start text-sm sm:text-base text-foreground/80 bg-background/50 p-3 rounded-lg">
+                    <div className="size-4 sm:size-5 rounded-full bg-[#0BC5EA]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                       <div className="size-2 bg-[#0BC5EA] rounded-full"></div>
                     </div>
                     Build practical skills with real-world applications
                   </li>
-                  <li className="flex items-start text-foreground/80 bg-background/50 p-3 rounded-lg">
-                    <div className="size-5 rounded-full bg-[#0BC5EA]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                  <li className="flex items-start text-sm sm:text-base text-foreground/80 bg-background/50 p-3 rounded-lg">
+                    <div className="size-4 sm:size-5 rounded-full bg-[#0BC5EA]/20 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                       <div className="size-2 bg-[#0BC5EA] rounded-full"></div>
                     </div>
                     Receive personalized feedback from industry experts
@@ -204,15 +204,15 @@ export function ProgramJourney() {
             <div className="relative">
               {/* Floating UI cards showing student progress metrics */}
               <motion.div
-                className="absolute top-0 right-0 md:-right-4 w-48"
+                className="absolute top-0 right-0 md:-right-4 w-40 sm:w-48"
                 initial={{ opacity: 0, y: 20, x: 0 }}
                 animate={{ opacity: 1, y: 0, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <Card className="bg-card/50 backdrop-blur-sm border-[#0BC5EA]/30 overflow-hidden">
                   <CardContent className="p-4">
-                    <div className="text-sm font-medium text-foreground/60 mb-1">Module Completion</div>
-                    <div className="text-2xl font-bold text-white mb-2">
+                    <div className="text-xs sm:text-sm font-medium text-foreground/60 mb-1">Module Completion</div>
+                    <div className="text-xl sm:text-2xl font-bold text-white mb-2">
                       {journeySteps[activeStep].metrics.completion}
                     </div>
                     <div className="w-full h-2 bg-background/50 rounded-full overflow-hidden">
@@ -228,16 +228,16 @@ export function ProgramJourney() {
               </motion.div>
 
               <motion.div
-                className="absolute top-1/3 left-0 md:-left-4 w-48"
+                className="absolute top-1/3 left-0 md:-left-4 w-40 sm:w-48"
                 initial={{ opacity: 0, y: 20, x: 0 }}
                 animate={{ opacity: 1, y: 0, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
                 <Card className="bg-card/50 backdrop-blur-sm border-[#6B46C1]/30 overflow-hidden">
                   <CardContent className="p-4">
-                    <div className="text-sm font-medium text-foreground/60 mb-1">Skills Acquired</div>
+                    <div className="text-xs sm:text-sm font-medium text-foreground/60 mb-1">Skills Acquired</div>
                     <div className="flex items-end">
-                      <div className="text-2xl font-bold text-white">{journeySteps[activeStep].metrics.skills}</div>
+                      <div className="text-xl sm:text-2xl font-bold text-white">{journeySteps[activeStep].metrics.skills}</div>
                       <div className="text-foreground/60 ml-1 mb-1">/ 23</div>
                     </div>
                     <div className="grid grid-cols-5 gap-1 mt-2">
@@ -258,15 +258,15 @@ export function ProgramJourney() {
               </motion.div>
 
               <motion.div
-                className="absolute bottom-0 right-1/4 w-48"
+                className="absolute bottom-0 right-1/4 w-40 sm:w-48"
                 initial={{ opacity: 0, y: 20, x: 0 }}
                 animate={{ opacity: 1, y: 0, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
               >
                 <Card className="bg-card/50 backdrop-blur-sm border-[#0BC5EA]/30 overflow-hidden">
                   <CardContent className="p-4">
-                    <div className="text-sm font-medium text-foreground/60 mb-1">Projects Completed</div>
-                    <div className="text-2xl font-bold text-white mb-2">
+                    <div className="text-xs sm:text-sm font-medium text-foreground/60 mb-1">Projects Completed</div>
+                    <div className="text-xl sm:text-2xl font-bold text-white mb-2">
                       {journeySteps[activeStep].metrics.projects}
                     </div>
                     <div className="flex space-x-1">
@@ -274,7 +274,7 @@ export function ProgramJourney() {
                         <div
                           key={i}
                           className={cn(
-                            "flex-1 h-8 rounded-md",
+                            "flex-1 h-6 sm:h-8 rounded-md",
                             i < journeySteps[activeStep].metrics.projects
                               ? "bg-gradient-to-b from-[#0BC5EA]/30 to-[#6B46C1]/30 border border-[#0BC5EA]/50"
                               : "bg-background/30 border border-background/50",
@@ -285,44 +285,14 @@ export function ProgramJourney() {
                   </CardContent>
                 </Card>
               </motion.div>
-
-              {/* Animated connection lines */}
-              <svg className="absolute inset-0 w-full h-full" style={{ zIndex: -1 }}>
-                <motion.path
-                  d="M100,50 C150,100 200,20 250,100"
-                  stroke="url(#lineGradient)"
-                  strokeWidth="2"
-                  fill="none"
-                  strokeDasharray="5,5"
-                  initial={{ pathLength: 0, opacity: 0 }}
-                  animate={{ pathLength: 1, opacity: 0.6 }}
-                  transition={{ duration: 1.5, delay: 0.8 }}
-                />
-                <motion.path
-                  d="M250,100 C300,180 350,120 400,150"
-                  stroke="url(#lineGradient)"
-                  strokeWidth="2"
-                  fill="none"
-                  strokeDasharray="5,5"
-                  initial={{ pathLength: 0, opacity: 0 }}
-                  animate={{ pathLength: 1, opacity: 0.6 }}
-                  transition={{ duration: 1.5, delay: 1 }}
-                />
-                <defs>
-                  <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="#0BC5EA" />
-                    <stop offset="100%" stopColor="#6B46C1" />
-                  </linearGradient>
-                </defs>
-              </svg>
             </div>
           </div>
         </motion.div>
       </div>
 
       {/* Background glow effects */}
-      <div className="absolute top-1/3 right-1/4 size-96 bg-[#0BC5EA]/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-1/3 left-1/4 size-96 bg-[#6B46C1]/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-1/3 right-1/4 size-72 sm:size-96 bg-[#0BC5EA]/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/3 left-1/4 size-72 sm:size-96 bg-[#6B46C1]/5 rounded-full blur-3xl"></div>
     </section>
   )
 }
