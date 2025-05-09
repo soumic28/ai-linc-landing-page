@@ -29,11 +29,11 @@ export function PlatformPreview() {
             viewport={{ once: true }}
             className="absolute inset-0 bg-[#1A202C] border border-[#0BC5EA]/30 rounded-2xl shadow-2xl overflow-hidden"
           >
-            <div className="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1200')] bg-cover bg-center opacity-40"></div>
+            <div className="absolute inset-0 bg-[url('/images/Dashboard1.png?height=600&width=1200')] bg-cover bg-center opacity-40"></div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0A1128]/90"></div>
 
             {/* Platform UI Elements */}
-            <div className="absolute top-8 left-8 right-8 h-12 bg-[#0A1128]/80 border border-[#0BC5EA]/20 rounded-lg flex items-center px-4">
+            {/* <div className="absolute top-8 left-8 right-8 h-12 bg-[#0A1128]/80 border border-[#0BC5EA]/20 rounded-lg flex items-center px-4">
               <div className="size-4 rounded-full bg-[#0BC5EA]/50 mr-2"></div>
               <div className="h-4 w-32 bg-white/20 rounded-md"></div>
               <div className="ml-auto flex space-x-4">
@@ -41,9 +41,9 @@ export function PlatformPreview() {
                 <div className="h-4 w-16 bg-white/20 rounded-md"></div>
                 <div className="h-4 w-16 bg-white/20 rounded-md"></div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="absolute top-28 left-8 bottom-8 w-64 bg-[#0A1128]/80 border border-[#0BC5EA]/20 rounded-lg p-4">
+            {/* <div className="absolute top-28 left-8 bottom-8 w-64 bg-[#0A1128]/80 border border-[#0BC5EA]/20 rounded-lg p-4">
               <div className="h-4 w-32 bg-white/20 rounded-md mb-6"></div>
               <div className="space-y-3">
                 <div className="h-8 bg-[#0BC5EA]/10 rounded-md"></div>
@@ -56,9 +56,9 @@ export function PlatformPreview() {
                 <div className="h-8 bg-white/10 rounded-md"></div>
                 <div className="h-8 bg-white/10 rounded-md"></div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="absolute top-28 left-80 right-8 bottom-8 bg-[#0A1128]/80 border border-[#0BC5EA]/20 rounded-lg p-6">
+            {/* <div className="absolute top-28 left-80 right-8 bottom-8 bg-[#0A1128]/80 border border-[#0BC5EA]/20 rounded-lg p-6">
               <div className="h-8 w-64 bg-white/20 rounded-md mb-6"></div>
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="h-32 bg-[#0BC5EA]/10 rounded-lg"></div>
@@ -70,7 +70,7 @@ export function PlatformPreview() {
                 <div className="h-10 w-32 bg-[#0BC5EA]/20 rounded-md"></div>
                 <div className="h-10 w-32 bg-[#6B46C1]/20 rounded-md"></div>
               </div>
-            </div>
+            </div> */}
           </motion.div>
 
           {/* Floating elements */}
@@ -81,7 +81,7 @@ export function PlatformPreview() {
             viewport={{ once: true }}
             className="absolute top-16 right-16 size-32 bg-[#0A1128] border border-[#0BC5EA]/30 rounded-xl shadow-xl overflow-hidden transform rotate-6"
           >
-            <div className="absolute inset-0 bg-[url('/placeholder.svg?height=128&width=128')] bg-cover bg-center opacity-40"></div>
+            <div className="absolute inset-0 bg-[url('/images/course-conten-preview.png?height=128&width=128')] bg-cover bg-center opacity-40"></div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0A1128]/90"></div>
             <div className="absolute bottom-3 left-3 right-3">
               <div className="h-2 w-12 bg-[#0BC5EA] rounded-full mb-2"></div>
@@ -96,7 +96,7 @@ export function PlatformPreview() {
             viewport={{ once: true }}
             className="absolute bottom-16 left-16 size-40 bg-[#0A1128] border border-[#6B46C1]/30 rounded-xl shadow-xl overflow-hidden transform -rotate-3"
           >
-            <div className="absolute inset-0 bg-[url('/placeholder.svg?height=160&width=160')] bg-cover bg-center opacity-40"></div>
+            <div className="absolute inset-0 bg-[url('/images/login-preview.png?height=160&width=160')] bg-cover bg-center opacity-40"></div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0A1128]/90"></div>
             <div className="absolute bottom-4 left-4 right-4">
               <div className="h-2 w-16 bg-[#6B46C1] rounded-full mb-2"></div>
