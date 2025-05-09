@@ -172,7 +172,7 @@ export function HeroSection() {
 
                 {/* Dashboard image */}
                 <Image
-                  src="/images/dashboard.png"
+                  src="/images/Dashboard1.png"
                   alt="AI LINC Learning Dashboard"
                   width={1000}
                   height={700}
