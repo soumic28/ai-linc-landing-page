@@ -83,10 +83,10 @@ export function PlatformPreview() {
           >
             <div className="absolute inset-0 bg-[url('/images/course-conten-preview.png?height=128&width=128')] bg-cover bg-center opacity-40"></div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0A1128]/90"></div>
-            <div className="absolute bottom-3 left-3 right-3">
+            {/* <div className="absolute bottom-3 left-3 right-3">
               <div className="h-2 w-12 bg-[#0BC5EA] rounded-full mb-2"></div>
               <div className="h-3 w-20 bg-white/20 rounded-md"></div>
-            </div>
+            </div> */}
           </motion.div>
 
           <motion.div
@@ -98,10 +98,10 @@ export function PlatformPreview() {
           >
             <div className="absolute inset-0 bg-[url('/images/login-preview.png?height=160&width=160')] bg-cover bg-center opacity-40"></div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#0A1128]/90"></div>
-            <div className="absolute bottom-4 left-4 right-4">
+            {/* <div className="absolute bottom-4 left-4 right-4">
               <div className="h-2 w-16 bg-[#6B46C1] rounded-full mb-2"></div>
               <div className="h-3 w-24 bg-white/20 rounded-md"></div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
 

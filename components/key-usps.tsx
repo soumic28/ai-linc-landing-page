@@ -63,11 +63,11 @@ export function KeyUsps() {
               <CardContent className="pt-0">
                 <div className="h-32 sm:h-40 bg-card/50 backdrop-blur-sm rounded-lg overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-transparent"></div>
-                  <div className="absolute inset-0 bg-[url('/placeholder.svg?height=160&width=320')] bg-cover bg-center opacity-40"></div>
-                  <div className="absolute bottom-4 left-4 right-4">
+                  <div className="absolute inset-0 bg-[url('/images/1st-pic.png?height=160&width=320')] bg-cover bg-center opacity-40"></div>
+                  {/* <div className="absolute bottom-4 left-4 right-4">
                     <div className="h-2 w-16 sm:w-24 bg-[#0BC5EA] rounded-full mb-2"></div>
                     <div className="h-3 w-20 sm:w-32 bg-white/20 rounded-md"></div>
-                  </div>
+                  </div> */}
                 </div>
               </CardContent>
             </Card>
@@ -90,11 +90,11 @@ export function KeyUsps() {
               <CardContent className="pt-0">
                 <div className="h-32 sm:h-40 bg-card/50 backdrop-blur-sm rounded-lg overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-transparent"></div>
-                  <div className="absolute inset-0 bg-[url('/placeholder.svg?height=160&width=320')] bg-cover bg-center opacity-40"></div>
-                  <div className="absolute bottom-4 left-4 right-4">
+                  <div className="absolute inset-0 bg-[url('/images/3rd-pic.png?height=160&width=320')] bg-cover bg-center opacity-40"></div>
+                  {/* <div className="absolute bottom-4 left-4 right-4">
                     <div className="h-2 w-16 sm:w-24 bg-[#6B46C1] rounded-full mb-2"></div>
                     <div className="h-3 w-20 sm:w-32 bg-white/20 rounded-md"></div>
-                  </div>
+                  </div> */}
                 </div>
               </CardContent>
             </Card>
@@ -117,11 +117,11 @@ export function KeyUsps() {
               <CardContent className="pt-0">
                 <div className="h-32 sm:h-40 bg-card/50 backdrop-blur-sm rounded-lg overflow-hidden relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-transparent"></div>
-                  <div className="absolute inset-0 bg-[url('/placeholder.svg?height=160&width=320')] bg-cover bg-center opacity-40"></div>
-                  <div className="absolute bottom-4 left-4 right-4">
+                  <div className="absolute inset-0 bg-[url('/images/2nd-pic.png?height=160&width=320')] bg-cover bg-center opacity-40"></div>
+                  {/* <div className="absolute bottom-4 left-4 right-4">
                     <div className="h-2 w-16 sm:w-24 bg-[#0BC5EA] rounded-full mb-2"></div>
                     <div className="h-3 w-20 sm:w-32 bg-white/20 rounded-md"></div>
-                  </div>
+                  </div> */}
                 </div>
               </CardContent>
             </Card>
